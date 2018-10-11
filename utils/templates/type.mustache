@@ -1,0 +1,1 @@
+{{#tsType}}{{#isRef}}{{target}}{{/isRef}}{{#isArray}}{{#elementType}}[{{>type}}]{{/elementType}}{{/isArray}}{{#isAtomic}}{{&tsType}}{{/isAtomic}}{{=<% %>=}}<%#isObject%>{<%#properties%> <%name%>: <%>type%>;<%/properties%>}<%/isObject%><%!%><%#isDictionary%>{[name: string]: <%#elementType%><%>type%><%/elementType%>}<%/isDictionary%><%={{ }}=%>{{/tsType}}
