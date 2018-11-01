@@ -1,6 +1,0 @@
-export type I{{&methodName}}Props = Omit<{{#isGET}}GetProps{{/isGET}}{{^isGET}}MutateProps{{/isGET}}<{{&successfulResponseType}}, any>, 'path'>;
-export const {{&methodName}}: React.SFC<I{{&methodName}}Props> = (props: I{{&methodName}}Props) => (
-  <{{#isGET}}Get{{/isGET}}{{^isGET}}Mutate verb="{{&method}}"{{/isGET}} path="{{&path}}">
-    {props.children}
-  </{{#isGET}}Get{{/isGET}}{{^isGET}}Mutate{{/isGET}}>
-);
